@@ -1,8 +1,9 @@
-﻿@page "{quizId}/{itemId}"
+﻿@page "{correct}/{total}"
 @model BackendLab01.Pages.Summary
 @{
-    ViewData["Title"] = "summary";
+    ViewData["Title"] = "Summary";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <H3>@ViewData["Title"]</H3>
+<p>You got @Model.CorrectAnswersCount out of total @Model.TotalAnswersCount</p>

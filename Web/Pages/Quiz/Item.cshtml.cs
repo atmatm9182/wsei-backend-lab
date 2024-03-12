@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace BackendLab01.Pages
 {
@@ -46,6 +45,20 @@ namespace BackendLab01.Pages
 
         public IActionResult OnPost()
         {
+            var quiz = _userService.FindQuizById(QuizId);
+            
+            var item = quiz.Items[ItemId - 1];
+            Console.WriteLine("{0} {1}", item.CorrectAnswer, UserAnswer);
+            _userService.SaveUserAnswerForQuiz(QuizId,  0, ItemId, UserAnswer);
+
+            if (quiz.Items.Count == ItemId)
+            {
+                var answers = _userService.GetUserAnswersForQuiz(QuizId, 0);
+                var correctAnswers = answers.Where(answer => answer.IsCorrect());
+                var result =  RedirectToPage("Summary", new { correct = correctAnswers.Count(), total = quiz.Items.Count });
+                return result;
+            }
+
             return RedirectToPage("Item", new {quizId = QuizId, itemId = ItemId + 1});
         }
     }
