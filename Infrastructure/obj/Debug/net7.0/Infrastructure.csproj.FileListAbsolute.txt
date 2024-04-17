@@ -14,3 +14,5 @@ D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\obj\Debug\net7.0\Infrastr
 D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
 D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
 D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
+D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
+D:\Users\oleh.kniaziev\wsei-backend-lab\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache

@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Entities;
+﻿using ApplicationCore.Interfaces.Repository;
+
+namespace Infrastructure.Entities;
 
 public class QuizEntity
 {
