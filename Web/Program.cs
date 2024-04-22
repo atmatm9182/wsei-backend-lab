@@ -1,11 +1,13 @@
+using ApplicationCore.Interfaces;
+using ApplicationCore.Interfaces.QuizUserService;
 using ApplicationCore.Interfaces.Repository;
-using BackendLab01;
+using ApplicationCore.Models;
 using Infrastructure.Memory;
 using Infrastructure.Memory.Repository;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Web;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
 builder.Services.AddRazorPages();
 
 builder.Services.AddTransient<IGenericGenerator<int>, IntGenerator>();

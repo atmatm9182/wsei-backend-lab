@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\data\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\data\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\pages\\chatroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\pages\\chatroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\blazorchatsamplehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\blazorchatsamplehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|d:\\users\\oleh.kniaziev\\wsei-backend-lab\\chat\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B78474A1-CA35-479A-8DB2-B1E68EE43B9F}|Chat\\Chat.csproj|solutionrelative:chat\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Data\\UserService.cs",
+              "RelativeDocumentMoniker": "Chat\\Data\\UserService.cs",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Data\\UserService.cs",
+              "RelativeToolTip": "Chat\\Data\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:59:29.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Chat\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Chat\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAwIQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-13T09:34:01.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Chat\\Shared\\NavMenu.razor",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Chat\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T09:33:19.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatRoom.razor",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Pages\\ChatRoom.razor",
+              "RelativeDocumentMoniker": "Chat\\Pages\\ChatRoom.razor",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Pages\\ChatRoom.razor",
+              "RelativeToolTip": "Chat\\Pages\\ChatRoom.razor",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwCkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T09:24:32.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlazorChatSampleHub.cs",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\BlazorChatSampleHub.cs",
+              "RelativeDocumentMoniker": "Chat\\BlazorChatSampleHub.cs",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\BlazorChatSampleHub.cs",
+              "RelativeToolTip": "Chat\\BlazorChatSampleHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:19:07.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Chat\\Pages\\Counter.razor",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Pages\\Counter.razor",
+              "RelativeToolTip": "Chat\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T09:18:01.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\App.razor",
+              "RelativeDocumentMoniker": "Chat\\App.razor",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\App.razor",
+              "RelativeToolTip": "Chat\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T09:16:16.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Program.cs",
+              "RelativeDocumentMoniker": "Chat\\Program.cs",
+              "ToolTip": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Chat\\Program.cs",
+              "RelativeToolTip": "Chat\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:16:09.496Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

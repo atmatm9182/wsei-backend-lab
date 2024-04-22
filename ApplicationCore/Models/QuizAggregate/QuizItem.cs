@@ -1,6 +1,6 @@
 ﻿using ApplicationCore.Interfaces.Repository;
 
-namespace BackendLab01;
+namespace ApplicationCore.Models;
 
 public class QuizItem: IIdentity<int>
 {
@@ -8,6 +8,10 @@ public class QuizItem: IIdentity<int>
     public string Question { get; }
     public List<string> IncorrectAnswers { get; }
     public string CorrectAnswer { get;  }
+
+    public QuizItem()
+    {
+    }
 
     public QuizItem(int id, string question, List<string> incorrectAnswers, string correctAnswer)
     {

@@ -1,6 +1,6 @@
 ﻿using ApplicationCore.Interfaces.Repository;
 
-namespace BackendLab01;
+namespace ApplicationCore.Models;
 
 public class Quiz: IIdentity<int>
 {

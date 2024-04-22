@@ -1,7 +1,8 @@
+using ApplicationCore.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BackendLab01.Pages
+namespace Web.Pages
 {
     
     public class QuizModel : PageModel
@@ -24,23 +25,31 @@ namespace BackendLab01.Pages
         
         [BindProperty]
         public int QuizId { get; set; }
-        
         [BindProperty]
         public int ItemId { get; set; }
+        [BindProperty]
+        public int? NextItemIndex { get; set; }
         
-        public void OnGet(int quizId, int itemId)
+        public IActionResult OnGet(int quizId, int itemIndex)
         {
             QuizId = quizId;
-            ItemId = itemId;
             var quiz = _userService.FindQuizById(quizId);
-            var quizItem = quiz?.Items[itemId - 1];
-            Question = quizItem?.Question;
-            Answers = new List<string>();
-            if (quizItem is not null)
+            if (quiz is null)
             {
-                Answers.AddRange(quizItem?.IncorrectAnswers);
-                Answers.Add(quizItem?.CorrectAnswer);
+                return BadRequest();
             }
+            var items = quiz.Items;
+            if (items.Count <= itemIndex)
+            {
+                return NotFound();
+            }
+            var quizItem = quiz.Items[itemIndex];
+            ItemId = quizItem.Id;
+            NextItemIndex = items.Count > itemIndex + 1 ? itemIndex + 1 : null; 
+            Question = quizItem.Question;
+            Answers = new List<string>() {quizItem.CorrectAnswer};
+            Answers.AddRange(quizItem?.IncorrectAnswers);
+            return Page();
         }
 
         public IActionResult OnPost()

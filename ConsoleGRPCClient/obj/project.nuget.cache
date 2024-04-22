@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "63O/4iijShYvx2BOZfhf+nSsvgUn+h2a65WU6148GzY6hf58fI8wr50JMNjYr7FpAyFNOCw51SLVjiVYsUD8Og==",
+  "success": true,
+  "projectFilePath": "/home/oleg/wsei/wsei-backend-lab/ConsoleGRPCClient/ConsoleGRPCClient.csproj",
+  "expectedPackageFiles": [
+    "/home/oleg/.nuget/packages/google.protobuf/3.22.1/google.protobuf.3.22.1.nupkg.sha512",
+    "/home/oleg/.nuget/packages/grpc.core.api/2.52.0/grpc.core.api.2.52.0.nupkg.sha512",
+    "/home/oleg/.nuget/packages/grpc.net.client/2.52.0/grpc.net.client.2.52.0.nupkg.sha512",
+    "/home/oleg/.nuget/packages/grpc.net.common/2.52.0/grpc.net.common.2.52.0.nupkg.sha512",
+    "/home/oleg/.nuget/packages/grpc.tools/2.52.0/grpc.tools.2.52.0.nupkg.sha512",
+    "/home/oleg/.nuget/packages/microsoft.extensions.logging.abstractions/3.0.3/microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "/home/oleg/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/home/oleg/.nuget/packages/microsoft.netcore.app.ref/7.0.17/microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "/home/oleg/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.17/microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "/home/oleg/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.17/microsoft.netcore.app.host.linux-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

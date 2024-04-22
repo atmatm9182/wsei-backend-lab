@@ -1,6 +1,6 @@
 ﻿using ApplicationCore.Interfaces.Criteria;
-using BackendLab01;
 using ApplicationCore.Interfaces.Repository;
+using ApplicationCore.Models;
 using Infrastructure.Memory;
 using Infrastructure.Memory.Repository;
 

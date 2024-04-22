@@ -1,5 +1,7 @@
+using ApplicationCore.Interfaces;
+using ApplicationCore.Interfaces.QuizUserService;
 using ApplicationCore.Interfaces.Repository;
-using BackendLab01;
+using ApplicationCore.Models;
 using Infrastructure.Memory;
 using Infrastructure.Memory.Repository;
 
@@ -44,9 +46,9 @@ public class MemoryQuizServiceTest
     public void AddUserAnswerTest()
     {
         var quiz = _uservice.FindQuizById(_quiz.Id);
-        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, userId: _user.Id, quizItemId: quiz.Items[0].Id, "x");
-        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, userId: _user.Id, quizItemId: quiz.Items[1].Id, quiz.Items[1].CorrectAnswer);
-        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, userId: _user.Id, quizItemId: quiz.Items[2].Id, quiz.Items[2].CorrectAnswer);
+        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, quizItemId: quiz.Items[0].Id,userId: _user.Id, "x");
+        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, quizItemId: quiz.Items[1].Id, userId: _user.Id, quiz.Items[1].CorrectAnswer);
+        _uservice.SaveUserAnswerForQuiz(quizId: quiz.Id, quizItemId: quiz.Items[2].Id, userId: _user.Id, quiz.Items[2].CorrectAnswer);
         List<QuizItemUserAnswer> userAnswers = _uservice.GetUserAnswersForQuiz(quiz.Id, userId: _user.Id);
         Assert.Equal(3, userAnswers.Count);
         int count = _uservice.CountCorrectAnswersForQuizFilledByUser(quiz.Id, _user.Id);

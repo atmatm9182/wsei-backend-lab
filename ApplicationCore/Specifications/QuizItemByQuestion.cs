@@ -1,4 +1,6 @@
-﻿using BackendLab01;
+﻿
+
+using ApplicationCore.Models;
 
 namespace ApplicationCore.Interfaces.Criteria;
 

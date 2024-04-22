@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj": {}
+  },
+  "projects": {
+    "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj",
+        "projectName": "ApplicationCore",
+        "projectPath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj",
+        "packagesPath": "/home/oleg/.nuget/packages/",
+        "outputPath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/oleg/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/oleg/.dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/oleg/.nuget/packages/",
+        "outputPath": "/home/oleg/wsei/wsei-backend-lab/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/oleg/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/oleg/.dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj",
+        "packagesPath": "/home/oleg/.nuget/packages/",
+        "outputPath": "/home/oleg/wsei/wsei-backend-lab/WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/oleg/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj"
+              },
+              "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/oleg/.dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
