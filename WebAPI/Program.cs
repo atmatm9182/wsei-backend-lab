@@ -1,9 +1,13 @@
+using ApplicationCore.Interfaces;
+using Infrastructure.Services;
 using Microsoft.OpenApi.Models;
 using Web.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<IQuizUserService, QuizUserServiceEF>();
+
 builder.Services.AddControllers();
 builder.Services.AddSingleton<JwtSettings>();
 builder.Services.ConfigureIdentity();

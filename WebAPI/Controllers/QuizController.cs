@@ -1,6 +1,4 @@
 ﻿using ApplicationCore.Interfaces;
-using ApplicationCore.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
@@ -14,6 +12,7 @@ public class QuizController: ControllerBase
     {
         _service = service;
     }
+    
     [HttpGet]
     [Route("{id}")]
     public ActionResult<QuizDto> FindById(int id)
@@ -49,7 +48,6 @@ public class QuizController: ControllerBase
     {
         int userId = 1;
         var answers = _service.GetUserAnswersForQuiz(quizId, userId);
-        //TODO: zdefiniuj mapper listy odpowiedzi na obiekt FeedbackQuizDto 
         return new FeedbackQuizDto()
         {
             QuizId = quizId,

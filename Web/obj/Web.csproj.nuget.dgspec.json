@@ -195,6 +195,22 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.22.1, )"
+            },
+            "Grpc.Net.Client.Web": {
+              "target": "Package",
+              "version": "[2.52.0, )"
+            },
+            "Grpc.Net.ClientFactory": {
+              "target": "Package",
+              "version": "[2.52.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.52.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.4, )"
