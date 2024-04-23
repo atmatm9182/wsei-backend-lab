@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6DRz9Kju09YDyHe1JggcI+fUtNKoN6TOezMaMc5aNb3T3dy2cvCIbrVyijjCvyrMQmsUP89Tv+UvKY8yA6gemw==",
+  "dgSpecHash": "780BDX08C3o3sNDU/j4XeYM6GBa94pcJ8/XP6HNvp7TrliOuD0MX2jHcUv+20JstmwV/JRflhnU9Va5bd+EoGw==",
   "success": true,
   "projectFilePath": "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj",
   "expectedPackageFiles": [

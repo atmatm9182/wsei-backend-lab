@@ -1,11 +1,12 @@
 ﻿using ApplicationCore.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("/api/v1/quizzes")]
-public class QuizController: ControllerBase
+public class QuizController : ControllerBase
 {
     private readonly IQuizUserService _service;
 
@@ -13,13 +14,13 @@ public class QuizController: ControllerBase
     {
         _service = service;
     }
-    
+
     [HttpGet]
     [Route("{id}")]
     public ActionResult<QuizDto> FindById(int id)
     {
         var result = QuizDto.of(_service.FindQuizById(id));
-        return result is null ?  NotFound() : Ok(result);
+        return result is null ? NotFound() : Ok(result);
     }
 
     [HttpGet]
@@ -29,6 +30,7 @@ public class QuizController: ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "Bearer")]
     [Route("{quizId}/items/{itemId}/answers")]
     public ActionResult SaveAnswer([FromBody] QuizItemAnswerDto dto, int quizId, int itemId)
     {
@@ -52,13 +54,15 @@ public class QuizController: ControllerBase
         {
             QuizId = quizId,
             UserId = 1,
-            QuizItemsAnswers = answers.Select(a => new FeedbackQuizItemDto()
-            {
-                Question = a.QuizItem.Question,
-                Answer = a.Answer,
-                IsCorrect = a.IsCorrect(),
-                QuizItemId = a.QuizItem.Id
-            }).ToList()
+            QuizItemsAnswers = answers
+                .Select(a => new FeedbackQuizItemDto()
+                {
+                    Question = a.QuizItem.Question,
+                    Answer = a.Answer,
+                    IsCorrect = a.IsCorrect(),
+                    QuizItemId = a.QuizItem.Id
+                })
+                .ToList()
         };
     }
 }
