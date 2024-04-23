@@ -3,31 +3,36 @@ using ApplicationCore.Models;
 
 namespace ApplicationCore.Interfaces;
 
-public class QuizAdminService:IQuizAdminService
+public class QuizAdminService : IQuizAdminService
 {
     private IGenericRepository<Quiz, int> quizRepository;
     private IGenericRepository<QuizItem, int> itemRepository;
 
-    public QuizAdminService(IGenericRepository<Quiz, int> quizRepository, IGenericRepository<QuizItem, int> itemRepository)
+    public QuizAdminService(IGenericRepository<Quiz, int> quizRepository,
+        IGenericRepository<QuizItem, int> itemRepository)
     {
         this.quizRepository = quizRepository;
         this.itemRepository = itemRepository;
     }
 
-    public QuizItem AddQuizItem(string question, List<string> incorrectAnswers, string correctAnswer, int points)
+    public QuizItem AddQuizItem(string question, List<string> incorrectAnswers,
+        string correctAnswer, int points)
     {
-        return itemRepository.Add(new QuizItem(question: question, incorrectAnswers: incorrectAnswers, correctAnswer: correctAnswer, id: 0));
+        return itemRepository.Add(new QuizItem(question: question,
+            incorrectAnswers: incorrectAnswers, correctAnswer: correctAnswer, id: 0));
     }
 
-    public void UpdateQuizItem(int id, string question, List<string> incorrectAnswers, string correctAnswer, int points)
+    public void UpdateQuizItem(int id, string question, List<string> incorrectAnswers,
+        string correctAnswer, int points)
     {
-        var quizItem = new QuizItem(id: id, question: question, incorrectAnswers: incorrectAnswers, correctAnswer: correctAnswer);
+        var quizItem = new QuizItem(id: id, question: question, incorrectAnswers: incorrectAnswers,
+            correctAnswer: correctAnswer);
         itemRepository.Update(id, quizItem);
     }
 
     public Quiz AddQuiz(string title, List<QuizItem> items)
     {
-        return quizRepository.Add(new Quiz( 0, title: title, items: items));
+        return quizRepository.Add(new Quiz(0, title: title, items: items));
     }
 
     public List<QuizItem> FindAllQuizItems()
@@ -36,6 +41,23 @@ public class QuizAdminService:IQuizAdminService
     }
 
     public List<Quiz> FindAllQuizzes()
-    { return quizRepository.FindAll();
+    {
+        return quizRepository.FindAll();
+    }
+
+    public void AddQuizItemToQuiz(int quizId, QuizItem item)
+    {
+        var quiz = quizRepository.FindById(quizId);
+        quiz?.Items.Add(item);
+    }
+
+    public void DeleteQuiz(int quizId)
+    {
+        quizRepository.RemoveById(quizId);
+    }
+
+    public void DeleteQuizItem(int itemId)
+    {
+        itemRepository.RemoveById(itemId);
     }
 }

@@ -4,6 +4,7 @@ using ApplicationCore.Interfaces.Repository;
 using ApplicationCore.Models;
 using Infrastructure.Memory;
 using Infrastructure.Memory.Repository;
+using Xunit;
 
 namespace UnitTest;
 

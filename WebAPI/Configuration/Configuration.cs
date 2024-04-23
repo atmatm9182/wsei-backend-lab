@@ -11,21 +11,17 @@ namespace Web.Configuration;
 
 public static class Configure
 {
-
     public static void ConfigureCors(this IServiceCollection services)
     {
         services.AddCors(options =>
         {
             options.AddPolicy(
-                "CorsPolicy", 
-                builder => 
-                    builder
-                    .AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader());
+                "CorsPolicy",
+                builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+            );
         });
     }
-    
+
     public static void ConfigureIdentity(this IServiceCollection services)
     {
         services
@@ -37,6 +33,7 @@ public static class Configure
                 options.Password.RequireNonAlphanumeric = true;
                 options.Lockout.MaxFailedAccessAttempts = 3;
             })
+            .AddRoles<UserRole>()
             .AddEntityFrameworkStores<QuizDbContext>()
             .AddDefaultTokenProviders();
     }
@@ -45,14 +42,20 @@ public static class Configure
     {
         services.AddAuthorization(opt =>
         {
-            opt.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
-                .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
-                .RequireAuthenticatedUser()
-                .Build());
-            opt.AddPolicy("Email", policy =>
-            {
-                policy.RequireClaim("email");
-            });
+            opt.AddPolicy(
+                "Bearer",
+                new AuthorizationPolicyBuilder()
+                    .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
+                    .RequireAuthenticatedUser()
+                    .Build()
+            );
+            opt.AddPolicy(
+                "Email",
+                policy =>
+                {
+                    policy.RequireClaim("email");
+                }
+            );
         });
         services
             .AddAuthentication(opt =>
@@ -75,8 +78,9 @@ public static class Configure
                         ValidateIssuerSigningKey = true,
                         ValidIssuer = jwtSettings.Issuer,
                         ValidAudience = jwtSettings.Audience,
-                        IssuerSigningKey =
-                            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret)),
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(jwtSettings.Secret)
+                        ),
                         ClockSkew = TimeSpan.FromSeconds(60)
                     };
                 options.Events = new JwtBearerEvents()
@@ -107,19 +111,26 @@ public static class Configure
                 };
             });
     }
-    
-    public static async void AddUsers(this WebApplication app){
+
+    public static async void AddUsers(this WebApplication app)
+    {
         using (var scope = app.Services.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetService<UserManager<UserEntity>>();
-            var find = await userManager.FindByEmailAsync("karol@wsei.edu.pl");
+            var find = await userManager.FindByNameAsync("karol");
             if (find == null)
             {
-                UserEntity user = new UserEntity() {Email = "karol@wsei.edu.pl", UserName = "karol"};
+                UserEntity user = new UserEntity()
+                {
+                    Email = "karol@wsei.edu.pl",
+                    UserName = "karol",
+                    Password = "1234ABcd$"
+                };
 
-                var saved = await userManager?.CreateAsync(user, "1234ABcd$");
-                userManager.AddToRoleAsync(user, "USER");
+                var saved = await userManager.CreateAsync(user, user.Password);
+                await userManager.AddToRoleAsync(user, "USER");
             }
         }
     }
 }
+

@@ -53,17 +53,20 @@ public class QuizUserServiceEF : IQuizUserService
             {
                 throw new QuizNotFoundException("Quiz, quiz item or user not found. Can't save!");
             }
+
             if (e.InnerException.Message.StartsWith("Violation of"))
             {
                 throw new QuizAnswerItemAlreadyExistsException(quizId, quizItemId, userId);
             }
+
             throw new Exception(e.Message);
         }
     }
 
     public List<QuizItemUserAnswer> GetUserAnswersForQuiz(int quizId, int userId)
     {
-        throw new NotImplementedException();
+        return _context.UserAnswers.Where(a => a.UserId == userId && a.QuizId == quizId)
+            .Select(QuizItemUserAnswerMapper.FromEntity).ToList();
     }
 
     public IEnumerable<Quiz> FindAllQuizzes()
@@ -86,4 +89,3 @@ public class QuizUserServiceEF : IQuizUserService
         return entity is null ? null : QuizMapper.FromEntityToQuiz(entity);
     }
 }
-

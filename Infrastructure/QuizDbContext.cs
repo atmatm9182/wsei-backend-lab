@@ -14,9 +14,9 @@ public class QuizDbContext : IdentityDbContext<UserEntity, UserRole, int>
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseSqlServer(
-            "Data Source=...;DATABASE=...;Integrated Security=true;TrustServerCertificate=True"
-        );
+        var dataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        var dbPath = Path.Join(dataFolder, "quiz.db");
+        optionsBuilder.UseSqlite($"Data Source={dbPath}");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -137,4 +137,3 @@ public class QuizDbContext : IdentityDbContext<UserEntity, UserRole, int>
             );
     }
 }
-

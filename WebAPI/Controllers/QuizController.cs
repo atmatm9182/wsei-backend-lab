@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
+
 [ApiController]
 [Route("/api/v1/quizzes")]
 public class QuizController: ControllerBase
@@ -46,18 +47,17 @@ public class QuizController: ControllerBase
     [Route("{quizId}/feedbacks")]
     public FeedbackQuizDto GetFeedback(int quizId)
     {
-        int userId = 1;
-        var answers = _service.GetUserAnswersForQuiz(quizId, userId);
+        var answers = _service.GetUserAnswersForQuiz(quizId, 1);
         return new FeedbackQuizDto()
         {
             QuizId = quizId,
             UserId = 1,
-            QuizItemsAnswers = answers.Select(i => new FeedbackQuizItemDto()
+            QuizItemsAnswers = answers.Select(a => new FeedbackQuizItemDto()
             {
-                Question = i.QuizItem.Question,
-                Answer = i.Answer,
-                IsCorrect = i.IsCorrect(),
-                QuizItemId = i.QuizItem.Id
+                Question = a.QuizItem.Question,
+                Answer = a.Answer,
+                IsCorrect = a.IsCorrect(),
+                QuizItemId = a.QuizItem.Id
             }).ToList()
         };
     }

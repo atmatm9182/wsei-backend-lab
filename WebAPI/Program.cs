@@ -1,11 +1,21 @@
 using ApplicationCore.Interfaces;
+using ApplicationCore.Models;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Infrastructure;
 using Infrastructure.Services;
 using Microsoft.OpenApi.Models;
 using Web.Configuration;
+using WebAPI.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddDbContext<QuizDbContext>();
+
+builder.Services.AddScoped<IValidator<QuizItem>, QuizItemValidator>();
 builder.Services.AddTransient<IQuizUserService, QuizUserServiceEF>();
 
 builder.Services.AddControllers();
