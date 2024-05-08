@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGRPCClient", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{60A4F9A8-DAB6-4B4B-BA3B-EBAE51B7FC6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTest", "IntegrationTest\IntegrationTest.csproj", "{BCA535BE-49C6-465B-9E35-2778D7F605DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{60A4F9A8-DAB6-4B4B-BA3B-EBAE51B7FC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60A4F9A8-DAB6-4B4B-BA3B-EBAE51B7FC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60A4F9A8-DAB6-4B4B-BA3B-EBAE51B7FC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA535BE-49C6-465B-9E35-2778D7F605DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA535BE-49C6-465B-9E35-2778D7F605DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA535BE-49C6-465B-9E35-2778D7F605DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA535BE-49C6-465B-9E35-2778D7F605DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

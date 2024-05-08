@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8XOu5Px3gL/W2/fMmdbuirUZLcaRL7su5oMdMBboVhXmDH/6LxQKexyv3zZS10bKxh7guR8FDhNZ/zJhFBdCg==",
+  "dgSpecHash": "bm2tAVNlQC5ePhLii2haol1qQyO29E+DTv5WIiMBBlRfgy6tYtOL0QYV7QHkh0+3mGjlzLXNgZln6x/85bfjYQ==",
   "success": true,
-  "projectFilePath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj",
-  "expectedPackageFiles": [
-    "/home/oleg/.nuget/packages/microsoft.netcore.app.ref/7.0.17/microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
-    "/home/oleg/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.17/microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

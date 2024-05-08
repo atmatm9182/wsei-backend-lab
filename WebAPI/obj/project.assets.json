@@ -2514,35 +2514,37 @@
     ]
   },
   "packageFolders": {
-    "/home/oleg/.nuget/packages/": {}
+    "D:\\Users\\oleh.kniaziev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj",
+      "projectUniqueName": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "/home/oleg/wsei/wsei-backend-lab/WebAPI/WebAPI.csproj",
-      "packagesPath": "/home/oleg/.nuget/packages/",
-      "outputPath": "/home/oleg/wsei/wsei-backend-lab/WebAPI/obj/",
+      "projectPath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "D:\\Users\\oleh.kniaziev\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/oleg/.nuget/NuGet/NuGet.Config"
+        "D:\\Users\\oleh.kniaziev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj": {
-              "projectPath": "/home/oleg/wsei/wsei-backend-lab/ApplicationCore/ApplicationCore.csproj"
+            "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
             },
-            "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/oleg/wsei/wsei-backend-lab/Infrastructure/Infrastructure.csproj"
+            "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Users\\oleh.kniaziev\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -2551,6 +2553,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2597,20 +2604,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.17, 7.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[7.0.17, 7.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.17, 7.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2619,7 +2612,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/oleg/.dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
